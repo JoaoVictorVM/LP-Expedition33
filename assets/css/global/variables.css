@@ -1,0 +1,7 @@
+:root {
+    --cor-preto: #000;
+    --primary: #C6A77F;
+    --text-color: #ffffff;
+
+    --f1: clamp(1rem, 1vw, 1.2rem);
+}
