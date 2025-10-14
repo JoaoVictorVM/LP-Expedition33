@@ -4,4 +4,5 @@
 /* Partials */
 @import "./partials/hero-section.css";
 @import "./partials/expedition-section.css";
-@import "./partials/sinopse-section.css"
+@import "./partials/sinopse-section.css";
+@import "./partials/newsletter-section.css"
