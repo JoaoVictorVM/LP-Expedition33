@@ -46,6 +46,24 @@
 }
 
 .subscribe {
+    margin-top: 5%;
     display: flex;
     gap: 15px;
+}
+
+.subscribe input {
+    width: 20rem;
+    height: 3rem;
+    background: #131516;
+    border-radius: 5px;
+    padding: 5%;
+}
+
+.subscribe button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    width: 9rem;
+    height: 3rem;
+    background: var(--primary);
+    border-radius: 5px;
 }
