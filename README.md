@@ -65,7 +65,7 @@ Mesmo sendo um projeto feito principalmente para estudo e diversão, deixei algu
 **João Victor Ventura Martins**
 
 💼 [LinkedIn](https://www.linkedin.com/in/jvvmartins/)  
-💻 [Portfólio](bit.ly/joaovmartins)  
+💻 [Portfólio](https://portfolio-eight-lemon-57.vercel.app/)  
 📸 [Instagram](https://www.instagram.com/dev.joaov/)  
 🐙 [GitHub](https://github.com/JoaoVictorVM)
 
