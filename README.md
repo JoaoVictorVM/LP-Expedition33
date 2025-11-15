@@ -17,7 +17,7 @@ A proposta foi desenvolver uma **landing page simples**, utilizando **somente c�
 
 Você pode conferir o resultado final da landing page clicando no link abaixo 👇  
 
-🔗 **[Acesse o site aqui]()**
+🔗 **[Acesse o site aqui](https://joaovictorvm.github.io/LP-Expedition33/)**
 
 ### Preview
 
