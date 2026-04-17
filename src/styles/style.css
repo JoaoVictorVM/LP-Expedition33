@@ -158,7 +158,7 @@ button {
 }
 
 .bgmonstro {
-  background-image: url("projeto imagens/bg-sec2.webp");
+  background-image: url("../assets/images/projeto imagens/bg-sec2.webp");
   background-size: cover;
   background-position: 50%;
 
@@ -179,7 +179,7 @@ button {
   }
 
   .sidney {
-    background-image: url("projeto imagens/card1.webp");
+    background-image: url("../assets/images/projeto imagens/card1.webp");
     background-size: cover;
     aspect-ratio: 16/9;
     padding: 10px;
@@ -191,7 +191,7 @@ button {
   }
 
   .mexico {
-    background-image: url("projeto imagens/card2.webp");
+    background-image: url("../assets/images/projeto imagens/card2.webp");
     background-size: cover;
     aspect-ratio: 16/9;
     padding: 10px;
@@ -203,7 +203,7 @@ button {
   }
 
   .islandia {
-    background-image: url("projeto imagens/card3.webp");
+    background-image: url("../assets/images/projeto imagens/card3.webp");
     background-size: cover;
     aspect-ratio: 16/9;
     padding: 10px;
@@ -268,7 +268,7 @@ button {
 footer {
   display: flex;
   flex-direction: column;
-  background-image: url("projeto imagens/bg-footer.webp");
+  background-image: url("../assets/images/projeto imagens/bg-footer.webp");
   background-position: 50%;
   background-size: cover;
   z-index: -5;
