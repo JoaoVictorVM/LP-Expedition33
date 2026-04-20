@@ -1,74 +1,137 @@
-# 🎮 Landing Page - Clair Obscur: Expedition 33
+# LP Expedition 33
 
-Landing page inspirada no jogo **Clair Obscur: Expedition 33**, desenvolvida como um projeto pessoal para treinar conceitos de **Front-end** e homenagear um dos jogos que mais me marcaram.
+Landing page inspirada em _Clair Obscur: Expedition 33_, desenvolvida com HTML, CSS e JavaScript puros, com foco em direcao visual, animacoes e construcao de interface sem frameworks.
 
----
+[Demonstracao online](https://joaovictorvm.github.io/LP-Expedition33/)
 
-## 🌟 Sobre o Projeto
+## Sobre o projeto
 
-Tive a ideia de criar essa página após finalizar o jogo, ele me marcou tanto que quis fazer algo relacionado a ele.  
-A proposta foi desenvolver uma **landing page simples**, utilizando **somente código puro**, tanto para passar o tempo quanto para **praticar boas práticas de estruturação de projetos** em HTML, CSS e JavaScript.
+Este projeto recria, em formato de landing page, a atmosfera estetica de _Clair Obscur: Expedition 33_. A proposta combina uma apresentacao visual imersiva com secoes promocionais, destaques de novidades, depoimentos, bloco institucional e animacoes de entrada e scroll.
 
----
+Alem do carater criativo e de homenagem ao universo do jogo, o projeto tambem funciona como exercicio pratico de fundamentos de front-end, organizacao de arquivos estaticos e composicao de experiencias visuais com JavaScript e GSAP.
 
-## 🖼️ Projeto
+O objetivo principal nao foi construir um produto escalavel ou uma aplicacao complexa, mas sim desenvolver uma entrega caprichada, tecnicamente coerente e bem documentada, respeitando o escopo de um projeto estatico de estudo.
 
-### Demonstração do Projeto
+## Objetivos
 
-Você pode conferir o resultado final da landing page clicando no link abaixo 👇  
+- Praticar HTML semantico, CSS e JavaScript em um projeto real.
+- Construir uma interface visualmente marcante sem uso de frameworks.
+- Explorar animacoes de entrada, scroll e pre-carregamento com GSAP.
+- Organizar assets, estilos e scripts de forma simples e reutilizavel.
 
-🔗 **[Acesse o site aqui](https://joaovictorvm.github.io/LP-Expedition33/)**
+## Funcionalidades
 
-### Preview
+- Hero section com chamada principal e CTA externo.
+- Animacoes de entrada na abertura da pagina.
+- Scroll suave e efeitos de movimento com GSAP.
+- Animacoes de texto com `SplitText`.
+- Cards de novidades com apelo visual.
+- Bloco de depoimentos e logos de parceiros.
+- Rodape tematico com links institucionais e elementos graficos.
+- Estrutura estatica, leve e sem etapa de build.
 
-Abaixo está uma pequena prévia do projeto, mostrando um pouco da interface e da atmosfera visual inspirada em *Clair Obscur: Expedition 33*.
+## Decisoes tecnicas
 
-![alt text](assets/images/Preview.png)
+- Uso de HTML, CSS e JavaScript puros para exercitar fundamentos sem abstrair comportamento com frameworks.
+- Carregamento de bibliotecas de animacao via CDN para simplificar a execucao do projeto.
+- Separacao direta entre estrutura (`index.html`), estilos (`src/styles/style.css`) e comportamento (`src/scripts/script.js`).
+- Organizacao de assets em subpastas para imagens e fontes, facilitando manutencao e leitura do repositorio.
+- Escopo deliberadamente enxuto, priorizando acabamento visual, clareza de estrutura e demonstracao de base tecnica.
 
----
+## Tecnologias utilizadas
 
-## 🛠️ Tecnologias Utilizadas
+- HTML5
+- CSS3
+- JavaScript
+- GSAP via CDN (`gsap`, `ScrollTrigger`, `ScrollSmoother`, `SplitText`)
 
-- **HTML**  
-- **CSS**  
-- **JavaScript**  
-- **Figma** (para prototipagem do layout)
+## Estrutura do projeto
 
-Optei por não utilizar frameworks neste projeto, para fortalecer minha base e melhorar minha organização de pastas e componentes em código puro.
+```text
+LP-Expedition33/
+|-- index.html
+|-- favicon.png
+|-- LICENSE
+|-- README.md
+`-- src/
+    |-- assets/
+    |   |-- fonts/
+    |   `-- images/
+    |       |-- imagens/
+    |       `-- projeto imagens/
+    |-- scripts/
+    |   `-- script.js
+    `-- styles/
+        `-- style.css
+```
 
----
+## Como executar localmente
 
-## 📑 Estrutura e Seções
+Como o projeto e estatico, basta abrir o `index.html` no navegador. Para uma experiencia melhor de desenvolvimento, o ideal e servir os arquivos com uma extensao como Live Server no VS Code.
 
-A landing page foi organizada em diferentes partes que representam elementos marcantes do jogo. Logo no início, a **Hero Section** traz uma das frases mais impactantes da história, servindo como introdução visual e emocional ao conteúdo da página.  
-Em seguida, há uma seção dedicada aos **personagens**, que são apresentados em um **slider simples** desenvolvido em JavaScript puro, dando um toque de dinamismo à navegação.  
-Também incluí uma **breve sinopse** para contextualizar o enredo do jogo e uma seção de **newsletter**, inspirada nos **diários de expedição** presentes no universo de Clair Obscur.
+### Opcao 1: abrir diretamente
 
----
+1. Clone o repositorio:
 
-## ⚙️ Funcionalidades e Destaques
+```bash
+git clone https://github.com/JoaoVictorVM/LP-Expedition33.git
+```
 
-O projeto foi desenvolvido de forma leve e objetiva, priorizando a estrutura semântica e a clareza do código.  
-Implementei um **slider de personagens** feito manualmente em JavaScript, apenas para adicionar um toque de interatividade ao site.  
-Além disso, o layout foi pensado de maneira **modular e organizada**, seguindo boas práticas de separação de estilos e estrutura.
+2. Acesse a pasta do projeto:
 
----
+```bash
+cd LP-Expedition33
+```
 
-## 🧩 Melhorias Futuras
+3. Abra o arquivo `index.html` no navegador.
 
-Mesmo sendo um projeto feito principalmente para estudo e diversão, deixei algumas ideias abertas para o futuro. Pretendo adicionar **responsividade completa** para diferentes dispositivos, expandir o conteúdo com **novas telas e seções**, e principalmente incluir um **player de música** para reproduzir a trilha sonora do jogo, o que ajudaria a tornar a experiência ainda mais imersiva.
+### Opcao 2: usar Live Server
 
----
+1. Abra o projeto no VS Code.
+2. Instale a extensao Live Server.
+3. Execute a opcao "Open with Live Server" no arquivo `index.html`.
 
-## 👨‍💻 Autor
+## Estrutura da interface
 
-**João Victor Ventura Martins**
+Atualmente a landing page esta organizada em blocos principais:
 
-💼 [LinkedIn](https://www.linkedin.com/in/jvvmartins/)  
-💻 [Portfólio](https://portfolio-eight-lemon-57.vercel.app/)  
-📸 [Instagram](https://www.instagram.com/dev.joaov/)  
-🐙 [GitHub](https://github.com/JoaoVictorVM)
+- `Header` com identificacao visual da proposta.
+- `Hero` com imagem de destaque, titulo e chamada principal.
+- `Ultimas novidades` com cards de noticias.
+- `Depoimentos` com trechos e logos.
+- `Agradecimentos` com lista de premiacoes e reconhecimento.
+- `Footer` com redes, bloco institucional e elementos de marca.
 
----
+## Destaques tecnicos observados no projeto
 
-⭐ Se você curtiu o projeto, deixe uma estrela no repositório!
+- Separacao simples entre estrutura, estilos e comportamento.
+- Uso de assets locais para identidade visual da pagina.
+- Integracao direta com bibliotecas de animacao por CDN.
+- Responsividade inicial com media queries para telas menores.
+- Projeto sem dependencias de build, bundlers ou frameworks.
+
+## Desafios tecnicos
+
+- Traduzir uma referencia estetica forte do universo do jogo para uma interface web estatica sem perder identidade visual.
+- Trabalhar animacoes de entrada e scroll de forma complementar, evitando excesso de ruido visual.
+- Manter a estrutura do projeto simples, mas ainda assim organizada o suficiente para leitura e manutencao.
+- Equilibrar impacto visual com uma base de front-end enxuta, sem apoio de framework ou pipeline de build.
+
+## Aprendizados
+
+- Consolidacao de fundamentos de HTML, CSS e JavaScript em um projeto com proposta visual clara.
+- Pratica de separacao de responsabilidades entre markup, estilo e comportamento.
+- Uso de GSAP para criar transicoes e animacoes orientadas a scroll em uma pagina estatica.
+- Importancia de documentar o projeto com clareza para comunicar intencao, escopo e decisoes tecnicas.
+
+## Status do projeto
+
+Projeto concluido como landing page estatica de estudo e homenagem. Nao ha planejamento de expansao funcional, o que torna este repositorio uma entrega fechada de portfolio e pratica tecnica.
+
+## Aviso
+
+Este e um projeto de estudo e homenagem, sem vinculacao oficial com _Clair Obscur: Expedition 33_, Sandfall Interactive ou marcas relacionadas. Todos os direitos sobre a obra original pertencem aos seus respectivos titulares.
+
+## Licenca
+
+Este projeto esta sob a licenca MIT. Veja o arquivo [LICENSE](LICENSE).
