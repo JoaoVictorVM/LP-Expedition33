@@ -1,369 +1,243 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clair Obscur: Expedition 33</title>
+    <link rel="stylesheet" href="src/styles/style.css" />
+  </head>
+  <body>
+    <div id="smooth-wrapper">
+      <!--obrigatorio pelo gsap pra scrool smoother-->
+      <div id="smooth-content">
+        <!--mesma coisa-->
+        <header>
+          <h3>Sandfall Interactive</h3>
+          <img
+            src="src/assets/images/projeto imagens/netflix-logo.svg"
+            alt="netflix-logo"
+          />
+        </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expedition 33</title>
+        <main>
+          <section class="hero">
+            <picture data-speed="0.7">
+              <img src="src/assets/images/imagens/bg-hero.png" alt="fundo" />
+            </picture>
 
-    <link rel="icon" href="./assets/favicons/icon.png">
+            <picture class="pessoinhas">
+              <source
+                media="(max-width: 600px)"
+                srcset="src/assets/images/imagens/bg-pessoas.png"
+              />
+              <img
+                src="src/assets/images/imagens/bg-pessoas.png"
+                alt="pessoas"
+              />
+            </picture>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="./assets/css/pages/index/index.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-
-<body>
-
-    <section class="hero-section">
-
-        <div class="background">
-
-            <img src="./assets/images/BackgroundImage.avif" alt="">
-
-        </div>
-
-        <div class="content">
-
-            <header>
-
-                <div class="header-content">
-
-                    <div class="logo">
-
-                        <img src="./assets/images/Logo.png" alt="">
-
-                    </div>
-
-                    <div>
-
-                        <ul>
-                            <a href="#expedition"><li>Expedição</li></a>
-                            <a href="#sinopse"><li>Sobre</li></a>
-                            <a href="#newsletter"><li>Diarios</li></a>
-                        </ul>
-
-                    </div>
-
-                    <div>
-
-                        <img src="./assets/images/SteamLogo.avif" alt="">
-
-                    </div>
-
-                </div>
-
-            </header>
-
-            <div class="container-hero">
-
-                <div class="title">
-
-                    <h6>FOR THOSE WHO COME AFTER</h6>
-
-                </div>
-
-                <div class="subtitle">
-
-                    <p>JUNTE-SE A EXPEDIÇÃO</p>
-
-                </div>
-
-                <div class="button">
-
-                    <button>Compre Agora | R$199,00</button>
-
-                </div>
-
-                <div class="caret">
-
-                    <p>CONHEÇA A EXPEDIÇÃO</p>
-
-                    <i class="bi bi-caret-down"></i>
-                </div>
-
-                <div class="transition"></div>
-
+            <div class="titulo">
+              <h3>CLAIR OBSCUR:</h3>
+              <h1>EXPEDITION 33</h1>
             </div>
-
-        </div>
-
-    </section>
-
-
-
-    <section class="expedition-section" id="expedition">
-
-        <div class="background">
-
-            <img src="./assets/images/BackgroundExpedition.jpg" alt="">
-
-        </div>
-
-        <div class="content">
-
-            <div class="transition"></div>
-
-            <div class="container-expedition">
-
-                <div class="text-area" id="text-box">
-
-                    <div class="subtitle fade-slide" id="subtitle">
-
-                        <p>33</p>
-
-                    </div>
-
-                    <div class="title fade-slide" id="title">
-
-                        <h6>GUSTAVE</h6>
-
-                    </div>
-
-                    <div class="text-line"></div>
-
-                    <div class="about fade-slide" id="about">
-
-                        <p>
-                            Gustave cresceu sentindo-se sufocado pela presença constante da Pintora sobre
-                            Lumière.<br>Como
-                            engenheiro, ele dedicou sua vida à defesa e aos sistemas agrícolas da cidade, esforçando-se
-                            para proteger e sustentar seu povo.<br>Agora, como Expedicionário, ele dedica seu último ano
-                            de
-                            vida a derrotar a Pintora e recuperar um futuro para os filhos de Lumière.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="slider-area">
-
-                    <div class="slider">
-
-                        <div class="caret-left">
-
-                            <i class="bi bi-caret-left"></i>
-
-                        </div>
-
-                        <div class="cards">
-
-                            <div class="card active"><img src="./assets/images/Gustave.png" alt=""></div>
-                            <div class="card"><img src="./assets/images/Maelle.png" alt=""></div>
-                            <div class="card"><img src="./assets/images/Lune.png" alt=""></div>
-                            <div class="card"><img src="./assets/images/Sciel.png" alt=""></div>
-                            <div class="card"><img src="./assets/images/Monoco.png" alt=""></div>
-                            <div class="card"><img src="./assets/images/Verso.png" alt=""></div>
-
-                        </div>
-
-                        <div class="caret-right">
-
-                            <i class="bi bi-caret-right"></i>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="chamado">
+              <p class="textosplit">
+                Destrua a Artífice para que ela nunca mais possa pintar a morte
+              </p>
+              <a
+                href="https://www.expedition33.com/"
+                target="_blank"
+                class="botao"
+              >
+                SAIBA MAIS
+                <img
+                  src="src/assets/images/projeto imagens/seta-botao.svg"
+                  alt="seta-botao"
+                />
+              </a>
             </div>
+          </section>
 
-            <div class="transition"></div>
-
-        </div>
-
-    </section>
-
-
-
-    <section class="sinopse-section" id="sinopse">
-
-        <div class="background">
-
-            <img src="./assets/images/BackgroundSinopse.png" alt="">
-
-        </div>
-
-        <div class="content">
-
-            <div class="transition"></div>
-
-            <div class="container-sinopse">
-
-                <div class="title-area">
-
-                    <div class="subtitle">
-
-                        <p>Ano após ano,</p>
-
-                    </div>
-
-                    <div class="title">
-
-                        <h6>ela nos apaga.</h6>
-
-                    </div>
-
+          <div class="bgmonstro">
+            <section class="sessaodois">
+              <div class="titulosessao">
+                <h2 class="textosplit">ÚLTIMAS NOVIDADES</h2>
+                <a
+                  href="https://www.expedition33.com/latest-news"
+                  target="_blank"
+                  class="botao"
+                >
+                  TODAS AS NOVIDADES
+                  <img
+                    src="src/assets/images/projeto imagens/seta-botao.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="cidades">
+                <div class="sidney">
+                  <h3>Photo Mode</h3>
+                  <p>Feb 11 - 4 min</p>
                 </div>
-
-                <div class="sinopse-area">
-
-                    <div class="dot-bar">
-
-                        <div class="dot"></div>
-                        <div class="line"></div>
-
-                    </div>
-
-                    <div class="sinopse-text">
-
-                        <div class="title">
-
-                            <h6>O que voce vai pintar?</h6>
-
-                        </div>
-
-                        <div class="sinopse">
-
-                            <p>
-                                Uma vez por ano, a Artífice desperta e pinta no monólito dela. Pinta o número
-                                amaldiçoado. E todos com idade superior ao número viram fumaça e desaparecem. Ano após
-                                ano, um número menor é pintado e mais de nós somos apagados. Amanhã, ela despertará e
-                                pintará "33". E amanhã, partiremos em nossa missão final: destruir a Artífice, para que
-                                ela nunca mais possa pintar a morte.
-                            </p>
-
-                        </div>
-
-                    </div>
-
+                <div class="mexico">
+                  <h3>'Thank You' Update</h3>
+                  <p>Dec 12, 2025 - 1 min</p>
                 </div>
-
-            </div>
-
-            <div class="transition"></div>
-
-        </div>
-
-    </section>
-
-
-
-    <section class="newsletter-section" id="newsletter">
-
-        <div class="background">
-
-            <img src="./assets/images/BackgroundNewsletter.png" alt="">
-
-        </div>
-
-        <div class="content">
-
-            <div class="transition"></div>
-
-            <div class="container-newsletter">
-
-                <div class="newsletter-img">
-
-                    <img src="./assets/images/Esquie.avif" alt="">
-
+                <div class="islandia">
+                  <h3>A Painted Symphony</h3>
+                  <p>Nov 26, 2025 - 1 min</p>
                 </div>
-
-                <div class="newsletter-area">
-
-                    <div class="subtitle">
-
-                        <p>QUER RECEBER NOTICIAS DA EXPEDIÇÃO?</p>
-
-                    </div>
-
-                    <div class="title">
-
-                        <h6>INSCREVA-SE NO DIARIO DE EXPEDICAO</h6>
-
-                    </div>
-
-                    <div class="description">
-
-                        <p>
-                            Junte-se ao Diário da Expedição e receba em primeira mão as novas descobertas, relatos e
-                            atualizações do mundo de Clair Obscur: Expedition 33. Inscrevendo-se, você será o primeiro a
-                            saber sobre diários de desenvolvimento, eventos especiais, artes inéditas e comunicados dos
-                            próprios viajantes que desafiam o ciclo da Pintora. Não perca nenhuma página desta jornada
-                        </p>
-
-                    </div>
-
-                    <div class="subscribe">
-
-                        <div class="email-area">
-
-                            <input type="email" name="email" placeholder="Seu endereço de email">
-
-                        </div>
-
-                        <div class="button-area">
-
-                            <button>Inscreva-se agora</button>
-
-                        </div>
-
-                    </div>
-
+              </div>
+            </section>
+            <section class="depoimentos">
+              <div class="logos">
+                <img
+                  src="src/assets/images/projeto imagens/netflix-logo.svg"
+                  alt="netflix-logo"
+                />
+                <img
+                  src="src/assets/images/projeto imagens/clio-logo.svg"
+                  alt="clio-logo"
+                />
+                <img
+                  src="src/assets/images/projeto imagens/fever-logo.svg"
+                  alt="fever-logo"
+                />
+              </div>
+              <div class="depoimento">
+                <div class="dep">
+                  <img
+                    src="src/assets/images/projeto imagens/img-dep1.webp"
+                    alt="nbc-logo"
+                  />
+                  <p>
+                    "Wearing its inspirations on its sleeve, Clair Obscur:
+                    Expedition 33 paints itself into the pantheon of great RPGs
+                    with a brilliant combat system and a gripping, harrowing
+                    story."
+                  </p>
                 </div>
+                <div class="dep">
+                  <img
+                    src="src/assets/images/projeto imagens/img-dep2.webp"
+                    alt="fox-logo"
+                  />
+                  <p>
+                    "It’s a stunning game that only gets more and more stunning
+                    the further you get. It’s an easy recommend to anyone, even
+                    people like me who have previously been allergic to
+                    turn-based combat. You may have to get used to it, but push
+                    past and learn the systems to experience once of the best
+                    games you may play in years."
+                  </p>
+                </div>
+                <div class="dep">
+                  <img
+                    src="src/assets/images/projeto imagens/img-dep3.webp"
+                    alt="sf-logo"
+                  />
+                  <p>
+                    "Clair Obscur: Expedition 33 has something common to all
+                    great games: the ability to make us forget the world around
+                    us, even if it's for just a few minutes, to fully absorb its
+                    ideas, and deliver a cathartic conclusion."
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
+          <section class="agradecimentos">
+            <div class="agradecimento">
+              <h2 class="textosplit">FOR THOSE WHO COME AFTER</h2>
+              <ul>
+                <li>The Game Awards</li>
+                <li>Dice Awards</li>
+                <li>Bafta</li>
+                <li>Golden Joystick Awards</li>
+                <li>Flow Games Awards</li>
+                <li>GDC Awards</li>
+                <li>500+ Awardees</li>
+              </ul>
             </div>
+          </section>
+        </main>
 
-            <div class="transition"></div>
-
-        </div>
-
-    </section>
-
-    <footer>
-
-        <div class="footer-content">
-
-            <div class="footer-publi">
-                
-                <img src="./assets/images/SandfallLogo.avif" alt="">
-
-                <div class="div-line"></div>
-
-                <img src="./assets/images/KeplerLogo.avif" alt="">
-
+        <footer>
+          <section class="conteudofooter">
+            <div class="titulofooter">
+              <h3>CLAIR OBSCUR:</h3>
+              <h1>EXPEDITION 33</h1>
             </div>
-
-            <div class="footer-rights">
-
-                <p>Clair Obscur: Expedition 33 ©2025 Sandfall Interactive SAS - Published by Kepler Interactive Limited.</p>
-                <p>All rights reserved.</p>
-
+            <div class="parceria">
+              <div class="redes">
+                <h3>REDES SOCIAIS</h3>
+                <img
+                  src="src/assets/images/projeto imagens/footer-facebook.svg"
+                  alt=""
+                />
+                <img
+                  src="src/assets/images/projeto imagens/footer-instagram.svg"
+                  alt=""
+                />
+                <img
+                  src="src/assets/images/projeto imagens/footer-twitter.svg"
+                  alt=""
+                />
+              </div>
+              <div class="parc">
+                <h3>PARCEIRO DE MÍDIA</h3>
+                <img
+                  src="src/assets/images/projeto imagens/footer-parceiro.svg"
+                  alt=""
+                />
+              </div>
+              <div class="inst">
+                <h3>INSTITUCIONAL</h3>
+                <ul>
+                  <li>Contato</li>
+                  <li>Imprensa</li>
+                  <li>Parcerias</li>
+                  <li>Influenciadores</li>
+                </ul>
+              </div>
             </div>
+          </section>
 
-            <div class="footer-store">
+          <div class="logofooter">
+            <img
+              src="src/assets/images/projeto imagens/netflix-logo.svg"
+              alt=""
+            />
+            <img
+              src="src/assets/images/projeto imagens/fever-logo.svg"
+              alt=""
+            />
+          </div>
 
-                <img src="./assets/images/SteamLogo.avif" alt="">
+          <div class="textoinfinito">
+            <h3>EXPEDITION 33</h3>
+            <h3>EXPEDITION 33</h3>
+            <h3>EXPEDITION 33</h3>
+          </div>
+        </footer>
+      </div>
+    </div>
 
-            </div>
+    <div id="preloader">
+      <img
+        width="420"
+        height="210"
+        viewBox="0 0 302 110"
+        src="src/assets/images/projeto imagens/logo-clair.png"
+      >
+    </img>
+    </div>
 
-        </div>
-
-    </footer>
-
-    <script src="./assets/js/pages/index/slider.js"></script>
-
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <script src="src/scripts/script.js"></script>
+  </body>
 </html>

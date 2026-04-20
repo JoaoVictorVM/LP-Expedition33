@@ -1,0 +1,524 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: Banguiat;
+  src: url("src/assets/fonts/Benguiat Bold.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*evita somar largura fantasma*/
+}
+
+a {
+  text-decoration: none;
+}
+
+#preloader {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 20vw;
+    height: auto;
+  }
+}
+
+h2 {
+  font-size: 2vw;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #0c0102;
+  color: rgba(255, 255, 255, 0.89);
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  padding: 4vh;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 9;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 8vw;
+  position: relative;
+
+  picture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+  }
+
+  .titulo {
+    margin-top: 4vw;
+    z-index: 3;
+    text-align: start;
+    h3 {
+      font-weight: 300;
+      letter-spacing: 12px;
+      font-size: 25px;
+    }
+
+    h1 {
+      font-size: 3.5vw;
+      max-width: 20vw;
+      font-family: Banguiat;
+    }
+  }
+
+  .chamado {
+    margin-top: 4vw;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 2vw;
+    max-width: 27vw;
+    justify-content: end;
+    text-align: end;
+  }
+}
+
+.hero:before {
+  content: "";
+  background: linear-gradient(180deg, rgba(12, 1, 2, 0) 0%, #000000 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+
+.botao {
+  font-family: "poppins";
+  font-weight: 200;
+  border-bottom: white;
+  background: transparent;
+  color: white;
+  display: flex;
+  font-size: 16px;
+  gap: 12px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  padding-top: 16px;
+}
+
+.botao:hover {
+  background-size: 100% 1px;
+  transition: 0.3s;
+  scale: 1.05;
+}
+
+button {
+  font-family: "poppins";
+  font-weight: 200;
+  border-bottom: white;
+  background: transparent;
+  color: white;
+  display: flex;
+  font-size: 16px;
+  gap: 12px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  padding-top: 16px;
+}
+
+.sessaodois {
+  padding: 0 8vw;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2vw;
+
+  .titulosessao {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.bgmonstro {
+  background-image: url("../assets/images/projeto imagens/bg-sec2.webp");
+  background-size: cover;
+  background-position: 50%;
+
+  position: relative;
+  z-index: 4;
+  background-color: #0c0102;
+}
+
+.cidades {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  border-radius: 10px;
+
+  h3 {
+    font-weight: 400;
+  }
+
+  .sidney {
+    background-image: url("../assets/images/projeto imagens/card1.webp");
+    background-size: cover;
+    aspect-ratio: 16/9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    border-radius: 7px;
+    align-items: end;
+  }
+
+  .mexico {
+    background-image: url("../assets/images/projeto imagens/card2.webp");
+    background-size: cover;
+    aspect-ratio: 16/9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    border-radius: 7px;
+    align-items: end;
+  }
+
+  .islandia {
+    background-image: url("../assets/images/projeto imagens/card3.webp");
+    background-size: cover;
+    aspect-ratio: 16/9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    border-radius: 7px;
+    align-items: end;
+  }
+}
+
+.depoimentos {
+  display: flex;
+  flex-direction: column;
+
+  .logos {
+    padding-top: 4vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .depoimento {
+    padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dep {
+    text-align: justify;
+    max-width: 30%;
+  }
+
+  p {
+    padding-top: 15px;
+  }
+}
+
+.agradecimentos {
+  padding: 0 8vw;
+  text-align: center;
+  z-index: 8;
+  background-color: #000000;
+
+  h2 {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8vw;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/images/projeto imagens/bg-footer.webp");
+  background-position: 50%;
+  background-size: cover;
+  z-index: -5;
+}
+
+.conteudofooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulofooter {
+  padding: 8vw;
+  h3 {
+    font-weight: 300;
+    letter-spacing: 12px;
+    font-size: 25px;
+  }
+
+  h1 {
+    font-size: 4vw;
+    max-width: 20vw;
+    font-family: Banguiat;
+  }
+}
+
+.parceria {
+  display: flex;
+  gap: 2vw;
+  padding: 8vw;
+  justify-items: center;
+
+  h3 {
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.logofooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 4vw;
+}
+
+.textoinfinito {
+  display: flex;
+  gap: 7vw;
+  width: max-content; /*texto nao quebra linha, mas expande a tela*/
+  h3 {
+    font-family: banguiat;
+    font-size: 12vw;
+    mix-blend-mode: color-dodge; /*mesclar com o fundo*/
+    color: #8d8d8d; /*para mesclar no fundo, tom precisa ser proximo ao cinza*/
+    animation: textoinfinito 8s infinite linear;
+  }
+}
+
+@keyframes textoinfinito {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*MEDIA QUERIES - RESPONSAVEL PELA RESPONDIVIDADE DO SITE*/
+
+@media (max-width: 1500px) {
+  .sessaodois {
+    padding: 4vw;
+  }
+}
+/*
+@media (max-width: 1400px) {
+    .cidades {
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        width: 100%;
+    }
+} */
+
+@media (max-width: 430px) {
+  .hero {
+    flex-direction: column;
+
+    .titulo {
+      padding: 5vw;
+      margin-top: 7vw;
+
+      h3 {
+        font-size: 12px;
+        text-align: justify;
+      }
+
+      h1 {
+        font-size: 10.5vw;
+      }
+    }
+
+    .chamado {
+      padding-bottom: 2vw;
+      text-align: center;
+      max-width: 80vw;
+      align-items: center;
+
+      p {
+        font-size: 5vw;
+      }
+    }
+  }
+
+  .sessaodois {
+    button {
+      display: none;
+    }
+
+    .titulosessao {
+      h2 {
+        max-width: 80vw;
+        padding-bottom: 5vw;
+      }
+    }
+
+    .cidades {
+      display: flex;
+      flex-direction: column;
+
+      .sidney,
+      .mexico,
+      .islandia {
+        margin: 4vw;
+        width: 80vw;
+
+        h3 {
+          font-size: 4vw;
+        }
+      }
+
+      p {
+        max-width: 35%;
+        text-align: end;
+      }
+    }
+  }
+
+  .depoimentos {
+    .logos {
+      img:nth-child(1),
+      :nth-child(3) {
+        width: 20%;
+      }
+
+      img:nth-child(2) {
+        width: 40%;
+      }
+    }
+
+    .depoimento {
+      display: flex;
+      flex-direction: column;
+      width: 300%;
+
+      .dep {
+        margin-bottom: 8vw;
+
+        p {
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+
+  .agradecimentos {
+    h2 {
+      text-align: center;
+      margin-bottom: 7vw;
+    }
+
+    ul {
+      width: max-content;
+      gap: 32px;
+      animation: textoinfinito 15s infinite linear;
+    }
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  footer {
+    .conteudofooter {
+      display: flex;
+      flex-direction: column;
+      padding: 4vw;
+
+      .titulofooter {
+        padding-top: 70px;
+        width: 100%;
+        h3 {
+          font-size: 12px;
+          text-align: justify;
+        }
+
+        h1 {
+          font-size: 10.5vw;
+        }
+      }
+
+      .parceria {
+        h3 {
+          font-size: 3vw;
+        }
+        gap: 10vw;
+        flex-wrap: wrap;
+
+        .redes {
+          width: 100%;
+          margin: 40px 0px 32px;
+        }
+      }
+    }
+
+    .logofooter {
+      margin-top: 40px;
+    }
+
+    .textoinfinito {
+      h3 {
+        font-size: 25vw;
+      }
+    }
+  }
+}
